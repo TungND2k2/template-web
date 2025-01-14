@@ -8,7 +8,7 @@ https://www.tooplate.com/view/2127-little-fashion
 
 
 /*---------------------------------------
-  CUSTOM PROPERTIES ( VARIABLES )             
+  CUSTOM PROPERTIES ( VARIABLES )
 -----------------------------------------*/
 :root {
   --white-color:                #FFFFFF;
@@ -18,10 +18,9 @@ https://www.tooplate.com/view/2127-little-fashion
   --grey-color:                 #d0d1d1;
   --p-color:                    #717275;
 
-  --body-font-family:           'Inter', sans-serif;
-
+  --body-font-family:           'Lora', sans-serif;
   --h5-font-size:               24px;
-  --p-font-size:                20px;
+  --p-font-size:                18px;
   --copyright-text-font-size:   16px;
   --product-link-font-size:     14px;
   --custom-link-font-size:      12px;
@@ -29,8 +28,8 @@ https://www.tooplate.com/view/2127-little-fashion
   --font-weight-thin:           100;
   --font-weight-light:          300;
   --font-weight-normal:         400;
-  --font-weight-bold:           700;
-  --font-weight-black:          900;
+  --font-weight-bold:           500;
+  --font-weight-black:          700;
 }
 
 body,
@@ -50,12 +49,12 @@ html {
 
 body {
     background: var(--white-color);
-    font-family: var(--body-font-family);    
+    font-family: var(--body-font-family);
     position: relative;
 }
 
 /*---------------------------------------
-  TYPOGRAPHY               
+  TYPOGRAPHY
 -----------------------------------------*/
 
 h2,
@@ -112,7 +111,7 @@ p {
   font-weight: var(--font-weight-light);
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -137,7 +136,7 @@ a:hover {
 }
 
 /*---------------------------------------
-  CUSTOM LINK               
+  CUSTOM LINK
 -----------------------------------------*/
 .custom-link {
   color: var(--p-color);
@@ -172,7 +171,7 @@ strong {
 }
 
 /*---------------------------------------
-  PRE LOADER               
+  PRE LOADER
 -----------------------------------------*/
 .preloader {
   position: fixed;
@@ -215,7 +214,7 @@ strong {
 }
 
 /*---------------------------------------
-  CUSTOM BUTTON & ICON              
+  CUSTOM BUTTON & ICON
 -----------------------------------------*/
 .custom-btn {
   background: var(--dark-color);
@@ -275,7 +274,7 @@ strong {
 }
 
 /*---------------------------------------
-  DIV SEPARATOR               
+  DIV SEPARATOR
 -----------------------------------------*/
 .div-separator {
   position: relative;
@@ -305,7 +304,7 @@ strong {
 }
 
 /*---------------------------------------
-  FULL IMAGE               
+  FULL IMAGE
 -----------------------------------------*/
 .full-image-img {
   display: block;
@@ -324,7 +323,7 @@ strong {
 }
 
 /*---------------------------------------
-  NAVIGATION               
+  NAVIGATION
 -----------------------------------------*/
 .navbar {
   background: var(--white-color);
@@ -392,7 +391,7 @@ strong {
   transform: translateY(10px);
 }
 
-.navbar .nav-link.active::after, 
+.navbar .nav-link.active::after,
 .navbar .nav-link:hover::after {
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -405,7 +404,7 @@ strong {
   color: var(--primary-color);
 }
 
-.nav-link:focus, 
+.nav-link:focus,
 .nav-link:hover {
   color: var(--p-color);
 }
@@ -477,7 +476,7 @@ strong {
 }
 
 /*---------------------------------------
-  SITE HEADER              
+  SITE HEADER
 -----------------------------------------*/
 .site-header {
   background-color: var(--section-bg-color);
@@ -506,7 +505,7 @@ strong {
 }
 
 /*---------------------------------------
-  SLICK SLIDESHOW               
+  SLICK SLIDESHOW
 -----------------------------------------*/
 @media (min-width: 992px) {
   .slick-slideshow {
@@ -638,7 +637,7 @@ strong {
 }
 
 /*---------------------------------------
-  CUSTOM CIRCLE IMAGES               
+  CUSTOM CIRCLE IMAGES
 -----------------------------------------*/
 
 .custom-circle-image {
@@ -653,7 +652,7 @@ strong {
 }
 
 /*---------------------------------------
-  TESTIMONIAL               
+  TESTIMONIAL
 -----------------------------------------*/
 .slick-testimonial .slick-list,
 .slick-testimonial .slick-track {
@@ -711,7 +710,7 @@ strong {
 }
 
 /*---------------------------------------
-  SECTION               
+  SECTION
 -----------------------------------------*/
 section {
   content-visibility: auto;
@@ -728,7 +727,7 @@ section {
 }
 
 /*---------------------------------------
-  ABOUT               
+  ABOUT
 -----------------------------------------*/
 .about .nav-pills .nav-item {
   width: 100%;
@@ -744,7 +743,7 @@ section {
 }
 
 .about .nav-pills .nav-link:hover,
-.about .nav-pills .nav-link.active, 
+.about .nav-pills .nav-link.active,
 .about .nav-pills .show>.nav-link {
   background: transparent;
   border-left-color: var(--primary-color);
@@ -752,7 +751,7 @@ section {
 }
 
 /*---------------------------------------
-  FAQ ACCORDION               
+  FAQ ACCORDION
 -----------------------------------------*/
 .accordion-item {
   background-color: transparent;
@@ -794,7 +793,7 @@ button:focus:not(:focus-visible) {
 }
 
 /*---------------------------------------
-  TEAM MEMBERS               
+  TEAM MEMBERS
 -----------------------------------------*/
 .team {
   background: var(--grey-color);
@@ -855,7 +854,7 @@ button:focus:not(:focus-visible) {
 }
 
 /*---------------------------------------
-  SKILL - PROGRESS BAR               
+  SKILL - PROGRESS BAR
 -----------------------------------------*/
 .skill-thumb strong {
   display: inline-block;
@@ -881,7 +880,7 @@ button:focus:not(:focus-visible) {
 }
 
 /*---------------------------------------
-  PRODUCT               
+  PRODUCT
 -----------------------------------------*/
 .front-product {
   background: var(--section-bg-color);
@@ -899,6 +898,11 @@ button:focus:not(:focus-visible) {
 
 .product-thumb:hover .product-image {
   box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  background:  rgba(20, 61, 226, 0.5); /* Cool gradient */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border for depth */
+  transform: translateY(-5px); /* Adds a lifting effect */
+  transition: all 0.3s ease; /* Smooth transition */
+  border-radius: 10px;
 }
 
 .product-top {
@@ -956,7 +960,7 @@ button:focus:not(:focus-visible) {
 }
 
 /*---------------------------------------
-  CONTACT              
+  CONTACT
 -----------------------------------------*/
 .contact-info {
   padding: 40px;
@@ -987,7 +991,7 @@ button:focus:not(:focus-visible) {
 }
 
 /*---------------------------------------
-  SITE FOOTER               
+  SITE FOOTER
 -----------------------------------------*/
 .site-footer {
   background: var(--dark-color);
@@ -1028,7 +1032,7 @@ button:focus:not(:focus-visible) {
 }
 
 /*---------------------------------------
-  SOCIAL ICON               
+  SOCIAL ICON
 -----------------------------------------*/
 .social-icon {
   margin: 0;
@@ -1055,7 +1059,7 @@ button:focus:not(:focus-visible) {
 }
 
 /*---------------------------------------
-  RESPONSIVE STYLES               
+  RESPONSIVE STYLES
 -----------------------------------------*/
 @media screen and (max-width: 1200px) {
   h1 {
@@ -1180,3 +1184,92 @@ button:focus:not(:focus-visible) {
   }
 }
 
+/* NAVBAR */
+.navbar {
+  background: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.7); /* Light semi-transparent white */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for modern effect */
+}
+
+/* IMAGE */
+.best-dresses-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #F7F7F7;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.text-section {
+  flex: 1;
+  max-width: 25%;
+  text-align: left;
+  margin-right: 2%;
+}
+
+.image-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  padding: 2%;
+  flex: 3;
+  width: 70%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .best-dresses-container {
+      flex-direction: column; /* Stack the text and images vertically */
+  }
+
+  .text-section {
+      margin-right: 0;
+      max-width: 100%;
+      text-align: center; /* Center align the text for mobile */
+      margin-bottom: 20px; /* Add spacing between text and images */
+  }
+
+  .image-section {
+      grid-template-columns: 1fr; /* Single column for images */
+      grid-template-rows: auto; /* Let images flow naturally */
+      gap: 15px; /* Adjust gap for better spacing */
+      width: 100%; /* Full width for mobile */
+  }
+}
+
+/* IMAGE */
+.image-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Default desktop layout */
+  gap: 10px;
+  padding: 0px;
+  flex: 3;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .image-section {
+      grid-template-columns: 1fr; /* Single column layout for mobile */
+      grid-template-rows: repeat(3, 300px); /* Set height for each image */
+      gap: 15px; /* Add spacing between items */
+      width: 100%; /* Full width on mobile */
+  }
+
+  .image-section img {
+      width: 100%;/* Ensure images span full width */
+      height: 300px; /* Fixed height for images */
+      object-fit: cover; /* Ensure image fits within the height and maintains aspect ratio */
+      border-radius: 5px; /* Optional: add rounded corners */
+  }
+}
